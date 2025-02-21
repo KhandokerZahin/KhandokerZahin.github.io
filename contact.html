@@ -1,57 +1,61 @@
 <!DOCTYPE html>
-<!--
-  Student Name: Khandoker Zahin
-  File Name: index.html
-  Date: 02/10/2025
-  -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>&#128062; Wild Rescues</h1>
-      <h3>Rescue. Rehabilitate. Release</h3>
+      <a href="index.html">
+        <img src="baby-hawk.jpg" alt="Rescued baby hawk" />
+      </a>
     </header>
+
     <nav>
-      <a href="index.html">Home</a> &nbsp; &#9672; &nbsp;
-      <a href="about.html">About Us</a> &nbsp; &#9672; &nbsp;
-      <a href="partnership.html">Partnership</a> &nbsp; &#9672; &nbsp;
-      <a href="gallery.html">Gallery</a> &nbsp; &#9672; &nbsp;
-      <a href="faqs.html">FAQs</a> &nbsp; &#9672; &nbsp;
-      <a href="contact.html">Contact</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="partnership.html">Partnership</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
 
-    <!-- Use the main area to add the main content to the webpage -->
     <main>
       <div id="contact">
         <h2>You can reach us at:</h2>
-        <p>Office: (814) 555- 8989</p>
+        <p>
+          Office: <a href="tel:+18145558989" class="link">(814) 555-8989</a>
+          <!-- Added link class to phone number -->
+        </p>
         <p>
           Email:
           <a
-            href="mailto: contact@wildrescues
-            .net"
+            href="mailto:contact@wildrescues.net"
+            class="link"
+            style="color: #4d3319"
             >contact@wildrescues.net</a
           >
+          <!-- Brown color for email at the top -->
         </p>
         <p>
           Address:
           <a
             href="https://www.google.com/maps/search/8989+Rescue+Drive,+Ocala,+FL+3447/@29.1702534,-82.156935,25467m/data=!3m2!1e3!4b1?entry=ttu&g_ep=EgoyMDI1MDIxMC4wIKXMDSoASAFQAw%3D%3D"
-            >8989 Rescue Drive, Ocala, FL 34471</a
+            class="link"
           >
+            8989 Rescue Drive, Ocala, FL 34471
+          </a>
         </p>
       </div>
     </main>
+
     <footer>
-      <p>&copy; Copyright 2021 All Rights Reserved</p>
-      <a
-        href="mailto: contact@wildrescues
-            .net"
-        >contact@wildrescues.net</a
-      >
+      <p>&copy; Copyright 2025 All Rights Reserved</p>
+      <a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a>
+      <!-- Light blue color for email in the footer -->
     </footer>
   </body>
 </html>
