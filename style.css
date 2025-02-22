@@ -65,10 +65,10 @@ main ul {
 
 /* Style rules for links */
 .link {
-    color: #4d3319; /* Brown color */
-    text-decoration: none; /* Removes underline */
-    font-weight: bold; /* Makes text bold */
-    font-style: italic; /* Makes text italic */
+    color: #4d3319; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-style: italic; 
 }
 
 /* Style rules for action text */
@@ -83,17 +83,21 @@ main ul {
     text-align: center;
 }
 
-/* Style rules for footer */
+
+/* Style rules for footer content */
 footer {
     text-align: center;
     font-size: 0.85em;
     background-color: #2a1f14;
     color: #f6eee4;
-    padding: 1% 0;
+    padding: 1%;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 
 /* Light blue color for the email in the footer */
 footer a {
-    color: #83e6d8;
+    color: #f3e6d8;
     text-decoration: none;
 }
+
