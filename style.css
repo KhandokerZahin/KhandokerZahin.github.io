@@ -27,9 +27,7 @@ img {
     .mobile { 
       display: block; 
     } 
-    .tab-desk { 
-      display: none; 
-    }
+    
     .tel-link {
         display: block;
         background-color: #2a1f14;
@@ -64,34 +62,30 @@ img {
         width: auto;
         margin: 0;
     }
+    
   }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 
     nav {
         background-color: #2a1f14;
     }
     
     nav ul {
-        list-style-type: none;
-        
+        display: flex;
+        flex-direction: column; 
         padding: 0;
         text-align: center;
     }
-    
+
     nav li {
-        display: block;
         font-size: 1.5em;
         font-family: Geneva, Arial, sans-serif;
         font-weight: bold;
+        padding: 10px 0;
         border-top: 0.5px solid #f6eee4;
     }
-    
-    
-    
-    /* Style rules for main content*/
-    
-    
+
     nav li a {
         display: block;
         color: #f6eee4;
@@ -100,6 +94,9 @@ img {
     }
     #info ul{
         margin-left:2em;
+    }
+    footer{
+        margin-top:auto;
     }
     
 }
@@ -113,9 +110,7 @@ img {
 
 
     /* When the menu is open */
-    nav ul.show {
-        display: flex;
-    }
+    
 
 
 /* Style rules for navigation area */
