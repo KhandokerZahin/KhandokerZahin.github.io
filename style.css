@@ -3,7 +3,7 @@
 /* style.css */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3 {
+body, header, nav, main, footer, img, h1, h3, ul {
     margin: 0;
     padding: 0;
     border: 0;
@@ -18,8 +18,108 @@ img {
     max-width: 100%;
     display: block;
 }
+/* Style rules for mobile viewpoint */
+
+
+/* Style rules to show mobile class and hide tab-desk class */
+
+@media screen and (max-width: 767px) {
+    .mobile { 
+      display: block; 
+    } 
+    .tab-desk { 
+      display: none; 
+    }
+    .tel-link {
+        display: block;
+        background-color: #2a1f14;
+        padding: 2%;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 6px;
+  }
+  .tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+}
+.tab-desk {
+    display: none; 
+}
+}
+  
+  /* Style rules for tablet and larger screens */
+  @media screen and (min-width: 768px) {
+    .mobile { 
+      display: none; 
+    } 
+    .tab-desk { 
+      display: inline; 
+    }
+    .tel-link {
+        display: inline; 
+        background: none;
+        padding: 0;
+        width: auto;
+        margin: 0;
+    }
+  }
+
+@media screen and (max-width: 768px){
+
+    nav {
+        background-color: #2a1f14;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        
+        padding: 0;
+        text-align: center;
+    }
+    
+    nav li {
+        display: block;
+        font-size: 1.5em;
+        font-family: Geneva, Arial, sans-serif;
+        font-weight: bold;
+        border-top: 0.5px solid #f6eee4;
+    }
+    
+    
+    
+    /* Style rules for main content*/
+    
+    
+    nav li a {
+        display: block;
+        color: #f6eee4;
+        padding: 0.5em 1.5em;
+        text-decoration: none;
+    }
+    #info ul{
+        margin-left:2em;
+    }
+    
+}
+/* Style rules for header area */
+
+.mobile h1, .mobile h3{
+    padding:2%;
+    text-align: center;
+
+}
+
+
+    /* When the menu is open */
+    nav ul.show {
+        display: flex;
+    }
+
 
 /* Style rules for navigation area */
+
 nav {
     background-color: #2a1f14;
 }
@@ -38,6 +138,11 @@ nav li {
     font-weight: bold;
 }
 
+
+
+/* Style rules for main content*/
+
+
 nav li a {
     display: block;
     color: #f6eee4;
@@ -46,9 +151,16 @@ nav li a {
 }
 
 /* Style rules for main content */
+.mobile h1{
+    font-family: "Emblema One", serif, sans-serif;
+}
+.mobile h3{
+    font-family: "Lora", serif, sans-serif;
+
+}
 main {
     padding: 2%;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: "Lora", serif, sans-serif;
 }
 
 main p {
@@ -57,6 +169,9 @@ main p {
 
 main h3 {
     padding-top: 2%;
+}
+#info ul{
+    margin-left:3%;
 }
 
 main ul {
@@ -77,6 +192,10 @@ main ul {
     font-weight: bold;
     text-align: center;
 }
+.round{
+    border-radius:6px;
+}
+
 
 /* Style rules for contact section */
 #contact {
@@ -100,4 +219,11 @@ footer a {
     color: #f3e6d8;
     text-decoration: none;
 }
+
+
+
+main img {
+    margin: 0 auto;
+}
+
 
