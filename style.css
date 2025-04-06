@@ -373,6 +373,25 @@ textarea{
     border-radius: 10px;
         
     }
+    html, body {
+        height: 100%;
+      }
+      
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      main {
+        flex: 1;
+      }
+      
   }
   @media screen and (min-width: 1000px) {
     /* Navigation */
@@ -392,7 +411,25 @@ textarea{
     #info ul {
         margin-left: 5%;
     }
-
+    html, body {
+        height: 100%;
+      }
+      
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      main {
+        flex: 1;
+      }
+      
     /* Grid Layout */
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
@@ -498,7 +535,25 @@ textarea{
     main {
         background-color: #f6eee4;
     }
-
+    html, body {
+        height: 100%;
+      }
+      
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      main {
+        flex: 1;
+      }
+      
     .grid {
         grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns for larger screens */
         gap: 20px;
@@ -601,7 +656,25 @@ textarea{
     textarea{
         resize:none;
     }
-
+    html, body {
+        height: 100%;
+      }
+      
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      main {
+        flex: 1;
+      }
+      
     th, td {
         border: 1px solid #2a1f14;
         padding: 0.5em;
