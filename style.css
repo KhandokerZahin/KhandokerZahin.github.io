@@ -474,6 +474,13 @@ textarea{
         grid-column: 1 / span 3;
         font-size: 2em;
     }
+    main img {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
 
     /* Form Layout */
     form {
