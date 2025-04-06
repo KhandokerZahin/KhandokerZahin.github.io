@@ -152,6 +152,7 @@ footer {
     padding: 1%;
     padding-left: 0%;
     padding-right: 0%;
+    margin-top: auto;
 }
 
 /* Light blue color for the email in the footer */
@@ -170,6 +171,13 @@ main img {
     .mobile, .mobile-tablet { 
       display: block; 
     } 
+    html, body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
     
     .tel-link {
         display: block;
@@ -185,6 +193,21 @@ main img {
     text-decoration: none;
     font-weight: bold;
 }
+#questions p {
+    cursor: pointer;
+  }
+  
+  #answer {
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  #answer h2 {
+    display: none;
+  }
+  
 .tab-desk {
     display: none; 
 }
@@ -207,12 +230,7 @@ nav li {
     border-top: 0.5px solid #f6eee4;
 }
 
-nav li a {
-    display: block;
-    color: #f6eee4;
-    padding: 0.5em 1.5em;
-    text-decoration: none;
-}
+
 #info ul{
     margin-left:2em;
 }
@@ -242,6 +260,51 @@ label {
     font-size: 1.25em;
     border-radius: 10px;
 }
+.mobile-nav a{
+    color: #fff;
+    text-align: center;
+    font-size:2em;
+    text-decoration: none;
+    padding:3%;
+    display: block;
+}
+.mobile-nav a.nav-icon{
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    color:#f6eee4;
+    padding:2%;
+}
+.nav-icon div{
+    height: 40px;
+    width:40px;
+    color:#2a1f14;
+}
+#nav-links{
+    display: none;
+}
+h1{
+    margin: 28px 0 0 3%;
+}
+.form-grid fieldset:nth-child(1),.form-grid fieldset:nth-child(2) {
+    padding: 20px;
+border: 2px solid #c5a687;
+border-radius: 10px;
+    
+}
+textarea{
+    resize:none;
+}
+#wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    flex: 1;
+  }
+
 }
   
 /*Media Query for Tablet Viewport*/
@@ -252,6 +315,9 @@ label {
     .mobile, .mobile-tablet { 
       display: none; 
     } 
+    .mobile-nav{
+        display:none;
+    }
     .tab-desk, .desktop { 
       display: block; 
     }
@@ -276,6 +342,12 @@ label {
     nav li a{
         padding: 0.5em;
     }
+    nav li a {
+        display: block;
+        color: #f6eee4;
+        
+        text-decoration: none;
+    }
     .grid{
         grid-template-columns: 1fr 1fr;
         gap: 10px;
@@ -291,6 +363,15 @@ label {
         margin-bottom: 0;
         margin-left: auto;
         margin-right: auto;
+    }
+    textarea{
+        resize:none;
+    }
+    .form-grid fieldset:nth-child(1),.form-grid fieldset:nth-child(2) {
+        padding: 20px;
+    border: 2px solid #c5a687;
+    border-radius: 10px;
+        
     }
   }
   @media screen and (min-width: 1000px) {
@@ -325,21 +406,36 @@ label {
 
     /* Form Layout */
     form {
-        width: 100%;  /* Taking full width may stretch the form too much */
+        width: 100%;  
     }
 
     .form-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        max-width: 800px;
-        margin: 0 auto;
+        display: flex;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     }
     fieldset {
         width: 100%;
+        margin-bottom: 20px;
        
     }
+    .form-grid fieldset {
+        flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border: 2px solid #c5a687;
+    border-radius: 10px;
+    box-sizing: border-box;
 
+      }
+      textarea{
+        resize:none;
+    }
+      
     #submit {
         grid-column: 1 / span 2;
         justify-self: center;
@@ -358,14 +454,15 @@ label {
         display: block;
         padding-top: 2%;
     }
-    .form-grid fieldset:nth-child(1) {
-        grid-column: 1; 
+    .form-grid fieldset:nth-child(1),.form-grid fieldset:nth-child(2) {
+        padding: 20px;
+    border: 2px solid #c5a687;
+    border-radius: 10px;
         
     }
 
-    .form-grid fieldset:nth-child(2) {
-        grid-column: 2; 
-    }
+     
+    
     
 
     
@@ -395,6 +492,7 @@ label {
     #wrapper {
         width: 1920px;
         margin: 0 auto;
+        
     }
 
     main {
@@ -405,7 +503,15 @@ label {
         grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns for larger screens */
         gap: 20px;
     }
-
+    textarea{
+        resize:none;
+    }
+.form-grid fieldset:nth-child(1),.form-grid fieldset:nth-child(2) {
+        padding: 20px;
+    border: 2px solid #c5a687;
+    border-radius: 10px;
+        
+    }
     aside {
         grid-column: 1 / span 4;
         font-size: 3em;
@@ -418,7 +524,7 @@ label {
 
     /* Submit Button */
     form {
-        width: 100%;  /* Taking full width may stretch the form too much */
+        width: 100%;  
     }
 
     .form-grid {
@@ -430,6 +536,7 @@ label {
     }
     fieldset {
         grid-column: 1 / span 2;
+        
     }
 
     #submit {
@@ -491,6 +598,9 @@ label {
         font-weight: bold;
         padding: 1%;
     }
+    textarea{
+        resize:none;
+    }
 
     th, td {
         border: 1px solid #2a1f14;
@@ -516,6 +626,12 @@ label {
         gap: 20px;
         max-width: 800px;
         margin: 0 auto;
+    }
+    .form-grid fieldset:nth-child(1),.form-grid fieldset:nth-child(2) {
+        padding: 20px;
+    border: 2px solid #c5a687;
+    border-radius: 10px;
+        
     }
     fieldset {
         grid-column: 1 / span 2;
@@ -543,14 +659,14 @@ label {
     #submit {
         margin: 0 auto;
         display: block;
-        padding: 2%;
+        padding: 0;
         background-color: #2a1f14;
         color: #f6eee4;
         font-size: 1.25em;
         border-radius: 10px;
         margin-top: 20px;
         grid-column: span;
+        width: 200px;
+        height: 50px;
+        
     }
-    
-    
-
