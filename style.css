@@ -92,9 +92,20 @@ main p {
 main h3 {
     padding-top: 2%;
 }
-#info ul{
-    margin-left:3%;
+#info ul {
+    list-style: disc;
+    margin: 0;
+    padding: 0;
+    list-style-position: outside;
 }
+
+#info li {
+    margin-left: 1.25em; /* just enough for bullet without indenting the text */
+    font-size: 1.25em;
+    font-family: "Lora", serif;
+}
+
+
 
 main ul {
     list-style-type: square;
@@ -117,6 +128,14 @@ main ul {
 .round{
     border-radius:6px;
 }
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
 aside{
     text-align: center;
     font-size: 1.5em;
@@ -182,6 +201,19 @@ main img {
         width: 100%;
         font-size: 0.9em; /* Slightly smaller text for better fit */
       }
+      #info ul {
+        list-style: disc;
+        margin: 0;
+        padding: 0;
+        list-style-position: outside;
+    }
+    
+    #info li {
+        margin-left: 1.25em; /* just enough for bullet without indenting the text */
+        font-size: 1.25em;
+        font-family: "Lora", serif;
+    }
+    
     
       th, td {
         word-wrap: break-word;
@@ -350,6 +382,19 @@ textarea{
     .tab-desk, .desktop { 
       display: block; 
     }
+    #info ul {
+        list-style: disc;
+        margin: 0;
+        padding: 0;
+        list-style-position: outside;
+    }
+    
+    #info li {
+        margin-left: 1.25em; /* just enough for bullet without indenting the text */
+        font-size: 1.25em;
+        font-family: "Lora", serif;
+    }
+    
     .tel-link {
         display: inline; 
         background: none;
@@ -430,6 +475,19 @@ textarea{
     nav li a {
         padding: 0.5em 1.5em;
     }
+    #info ul {
+        list-style: disc;
+        margin: 0;
+        padding: 0;
+        list-style-position: outside;
+    }
+    
+    #info li {
+        margin-left: 1.25em; /* just enough for bullet without indenting the text */
+        font-size: 1.25em;
+        font-family: "Lora", serif;
+    }
+    
     nav li a:hover {
         color: #2a1f14;
         background-color: #f6eee4;
@@ -579,6 +637,19 @@ textarea{
     html, body {
         height: 100%;
       }
+      #info ul {
+        list-style: disc;
+        margin: 0;
+        padding: 0;
+        list-style-position: outside;
+    }
+    
+    #info li {
+        margin-left: 1.25em; /* just enough for bullet without indenting the text */
+        font-size: 1.25em;
+        font-family: "Lora", serif;
+    }
+    
       
       body {
         display: flex;
@@ -688,6 +759,19 @@ textarea{
         border-collapse: collapse;
         margin: 0 auto;
     }
+    #info ul {
+        list-style: disc;
+        margin: 0;
+        padding: 0;
+        list-style-position: outside;
+    }
+    
+    #info li {
+        margin-left: 1.25em; /* just enough for bullet without indenting the text */
+        font-size: 1.25em;
+        font-family: "Lora", serif;
+    }
+    
 
     caption {
         font-size: 1.5em;
