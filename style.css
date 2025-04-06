@@ -178,6 +178,33 @@ main img {
         display: flex;
         flex-direction: column;
       }
+      table {
+        width: 100%;
+        font-size: 0.9em; /* Slightly smaller text for better fit */
+      }
+    
+      th, td {
+        word-wrap: break-word;
+        padding: 0.5em;
+      }
+    
+      /* Optional: Stack table rows */
+      .responsive-table {
+        display: block;
+        overflow-x: auto; /* Just in case */
+      }
+    
+      .responsive-table table {
+        width: 100%;
+        table-layout: fixed; /* Keeps column widths even */
+      }
+    
+      .responsive-table th, 
+      .responsive-table td {
+        width: 25%; /* Adjust depending on your content */
+      }
+    
+    
     
     .tel-link {
         display: block;
@@ -196,6 +223,8 @@ main img {
 #questions p {
     cursor: pointer;
   }
+  
+  
   
   #answer {
     text-align: center;
@@ -406,7 +435,12 @@ textarea{
         background-color: #f6eee4;
         opacity: 0.5;
     }
-
+    .round {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    
     /* Info Section */
     #info ul {
         margin-left: 5%;
