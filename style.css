@@ -241,6 +241,8 @@ main img {
       .responsive-table td {
         width: 25%; /* Adjust depending on your content */
       }
+      
+      
     
     
     
@@ -360,6 +362,9 @@ border: 2px solid #c5a687;
 border-radius: 10px;
     
 }
+
+  
+
 textarea{
     resize:none;
 }
@@ -494,6 +499,13 @@ textarea{
           margin-top: 1em;
         }
       }
+      main img {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
       
       
   }
@@ -562,13 +574,7 @@ textarea{
         grid-column: 1 / span 3;
         font-size: 2em;
     }
-    main img {
-        display: block;
-        margin-left: 0;
-        margin-right: auto;
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
+    
 
     /* Form Layout */
     form {
@@ -642,6 +648,13 @@ textarea{
         color: #f6eee4;
         font-size: 1.25em;
         
+    }
+    main img {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
     
     
@@ -749,6 +762,7 @@ textarea{
         font-weight: bold;
         font-size: 1.25em;
     }
+    
 
     label {
         display: block;
@@ -766,6 +780,13 @@ textarea{
         margin-top: 20px;
         grid-column: span;
     }
+    main img {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
 }
 
     
@@ -780,6 +801,13 @@ textarea{
     body{
         background-color: white;
         color: black;
+    }
+    main img {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 }
 
@@ -938,3 +966,4 @@ textarea{
       }
       
       
+    
