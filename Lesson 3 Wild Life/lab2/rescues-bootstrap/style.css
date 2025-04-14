@@ -1,0 +1,72 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ), url(./Boot-Img/baby-hawk.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  background-origin: content-box;
+  overflow: hidden;
+}
+
+  .welcome {
+    position: relative;
+    top: 35%;
+  }
+  
+  .display-1 {
+    font-size: 6.5em;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .bg-brown {
+    background-color: black;
+  }
+  .lead{
+    font-weight: bold;
+    color: black;
+  }
+  .text-white{
+    text-decoration: none;
+  }
+  
+
+    
+  .pr-4 {
+    padding-right: 1.5rem;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .hero {
+      background-position: 100% ; 
+
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .hero {
+      background-position: 100% ;
+      background-attachment: scroll; 
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1439px) {
+    .hero {
+      background-position: 100%;
+    }
+  }
+  
+  
+  @media (min-width: 1440px) {
+    .hero {
+      background-position: 100% ;
+    }
+  }
+  
+  
+  
+  

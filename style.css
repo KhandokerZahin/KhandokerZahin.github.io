@@ -2,6 +2,7 @@
 /* 02/20/2025 */
 /* style.css */
 
+  
 /* CSS Reset */
 body, header, nav, main, footer, img,video, h1, h3, ul, aside,figure,figcaption {
     margin: 0;
@@ -136,23 +137,30 @@ video {
     height: auto;
 }
 
-aside{
+aside {
     text-align: center;
     font-size: 1.5em;
-    font-weight: bold;
-    text-shadow: 4px 4px 10px #c5a687;
-}
-figure{
-    border:4px solid #2a1f14;
-    box-shadow: 6px 6px 10px #c5a687;
-    max-width: 400px;
-    margin: 2% auto;
-}
-figcaption{
-    padding: 2%;
-    border-top: 4px solid #2a1f14;
+    font-weight: 700;
+    text-shadow: 4px 4px 10px #c5a687
 }
 
+figure {
+    border: 4px solid #2a1f14;
+    box-shadow: 6px 6px 10px #c5a687;
+    max-width: 400px;
+    margin: 2% auto
+}
+
+  
+  
+  
+  figcaption {
+    padding: 2%;
+    border-top: 4px solid #2a1f14;
+  }
+  
+
+  
 
 /* Style rules for contact section */
 #contact, #form h2 {
@@ -184,6 +192,7 @@ footer a {
 
 main img {
     margin: 0 auto;
+    
 }
 /* Style rules for mobile viewpoint */
 @media screen and (max-width: 767px) {
@@ -397,7 +406,9 @@ textarea{
     text-align: center;
   }
 
-  
+  #main-pic{
+    border-radius: 6px;
+  }
   
 }
   
@@ -518,7 +529,9 @@ textarea{
         text-align: center;
         max-width: 100%;
       }
-      
+      #main-pic{
+        border-radius: 6px;
+      }
       footer .social {
         position: absolute;
         right: 1em; 
@@ -528,13 +541,7 @@ textarea{
       
       @media (max-width: 600px) {
         
-      main img {
-        display: block;
-        margin-left: 0;
-        margin-right: auto;
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
+     
     footer {
         display: flex;
         justify-content: center; 
@@ -545,7 +552,9 @@ textarea{
         flex-wrap: wrap;
         position: relative; 
       }
-      
+      #main-pic{
+        border-radius: 6px;
+      }
       footer .copyright {
         text-align: center;
         max-width: 100%;
@@ -573,7 +582,13 @@ textarea{
         padding: 0;
         list-style-position: outside;
     }
-    
+    figure {
+        border: 4px solid #2a1f14;
+        box-shadow: 6px 6px 10px #c5a687;
+        max-width: 400px;
+        max-height: auto;
+        margin: 2% auto
+    }
     #info li {
         margin-left: 1.25em; /* just enough for bullet without indenting the text */
         font-size: 1.25em;
@@ -616,15 +631,27 @@ textarea{
       
     /* Grid Layout */
     .grid {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 30px;
+        grid-template-columns: auto auto auto;
+        grid-gap: 30px
     }
 
+    
+    #main-pic {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border-radius: 6px;
+    }
     aside {
         grid-column: 1 / span 3;
         font-size: 2em;
     }
-    
+    nav li a:hover {
+        opacity: 0.5;
+      }
+      
 
     /* Form Layout */
     form {
@@ -683,7 +710,8 @@ textarea{
         
     }
 
-     
+
+      
     
     
 
@@ -699,13 +727,7 @@ textarea{
         font-size: 1.25em;
         
     }
-    main img {
-        display: block;
-        margin-left: 0;
-        margin-right: auto;
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
+   
     footer {
         display: flex;
         justify-content: center; 
@@ -744,6 +766,13 @@ textarea{
         margin: 0 auto;
         
     }
+    figure {
+        border: 4px solid #2a1f14;
+        box-shadow: 6px 6px 10px #c5a687;
+        max-width: 400px;
+        max-height: auto;
+        margin: 2% auto
+    }
 
     main {
         background-color: #f6eee4;
@@ -780,10 +809,10 @@ textarea{
         flex: 1;
       }
       
-    .grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns for larger screens */
-        gap: 20px;
+      .grid {
+        grid-template-columns: auto auto auto auto
     }
+
     textarea{
         resize:none;
     }
@@ -851,13 +880,7 @@ textarea{
         margin-top: 20px;
         grid-column: span;
     }
-    main img {
-        display: block;
-        margin-left: 0;
-        margin-right: auto;
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
+    
     footer {
         display: flex;
         justify-content: center; 
@@ -868,7 +891,14 @@ textarea{
         flex-wrap: wrap;
         position: relative; 
       }
-      
+      #main-pic {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border-radius: 6px;
+    }
       footer .copyright {
         text-align: center;
         max-width: 100%;
@@ -895,12 +925,23 @@ textarea{
         background-color: white;
         color: black;
     }
-    main img {
-        display: block;
-        margin-left: 0;
-        margin-right: auto;
-        margin-top: 1em;
-        margin-bottom: 1em;
+  
+    .grid {
+        grid-template-columns: auto auto auto;
+        grid-gap: 30px
+    }
+
+    aside {
+        grid-column: 1 / span 3;
+        font-size: 2em
+    }
+    
+    figure {
+        border: 4px solid #2a1f14;
+        box-shadow: 6px 6px 10px #c5a687;
+        max-width: 400px;
+        max-height: auto;
+        margin: 2% auto
     }
 }
 
