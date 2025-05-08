@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Welcome to my Homepage" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Webpage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="pic-container">
+        <nav class="navbar">
+          <a href="index.html"><img src="AHIN.jpg" class="logo" /></a>
+
+          <div class="hamburger" id="hamburger">&#9776;</div>
+          <!-- Hamburger icon -->
+
+          <ul id="nav-links" class="nav-links">
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="FAQS.html">FAQS</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="text-container">
+        <h3>Hello, my name is</h3>
+
+        <h1>
+          <span class="color1">Khandoker</span
+          ><span class="color2"> Zahin</span>
+        </h1>
+
+        <h3>
+          <span class="text1">I'm a</span
+          ><span class="text2"> Future Web Developer</span>
+        </h3>
+        <p class="home-text">
+          Hi, I’m Zahin—someone who’s passionate about both technology and
+          aviation. I love building websites, whether it’s designing sleek
+          layouts or coding interactive features that bring ideas to life.
+          There’s something incredibly satisfying about creating something from
+          scratch and watching it come together online. I’m also fascinated by
+          airplanes—how they’re engineered, how they fly, and the innovation
+          behind them. Whether I’m working on a new web project or geeking out
+          over aircraft designs, I’m always exploring, learning, and building
+          things that inspire me.
+        </p>
+
+        <div id="links">
+          <a href="https://www.tiktok.com/@ishraktech?lang=en"
+            ><span class="span-link">Tiktok</span></a
+          >
+
+          <li>
+            <a href="https://www.youtube.com/@IshrakTech">
+              <span class="span-link">Youtube</span></a
+            >
+          </li>
+
+          <a href="https://www.instagram.com/ish.zahin_22/">
+            <span class="span-link">Instagram</span></a
+          >
+        </div>
+      </div>
+      <div class="container">
+        <img src="IMG_7250.jpg" />
+      </div>
+    </main>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

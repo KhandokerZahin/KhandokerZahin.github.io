@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Here you can learn about Zahin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="pic-container">
+        <nav class="navbar">
+          <a href="index.html"><img src="AHIN.jpg" class="logo" /></a>
+
+          <div class="hamburger" id="hamburger">&#9776;</div>
+          <!-- Hamburger icon -->
+
+          <ul id="nav-links" class="nav-links">
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="FAQS.html">FAQS</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="me-pic">
+        <img src="IMG_7261.jpg" class="my-pic" />
+      </div>
+      <div id="about-text">
+        <h1>
+          <span class="about-text1">About</span
+          ><span class="about-text2"> Me</span>
+        </h1>
+      </div>
+      <div>
+        <p>
+          Hi, I’m Zahin—someone who’s passionate about both technology and
+          aviation. I love building websites, whether it’s designing sleek
+          layouts or coding interactive features that bring ideas to life.
+          There’s something incredibly satisfying about creating something from
+          scratch and watching it come together online. I’m also fascinated by
+          airplanes—how they’re engineered, how they fly, and the innovation
+          behind them. Whether I’m working on a new web project or geeking out
+          over aircraft designs, I’m always exploring, learning, and building
+          things that inspire me.
+        </p>
+      </div>
+      <h1>In Summery:</h1>
+      <ul>
+        <li>I love Aviations</li>
+        <li>I love Tech</li>
+        <li>I love Math</li>
+      </ul>
+      <video controls poster="Media/IMG_0961.JPG">
+        <source src="Media/MVI_0164.MP4" type="video/mp4" />
+        <source src="Media/wildrescues.webm" type="video/webm" />
+        <track
+          src="Media/captions.vtt"
+          kind="subtitles"
+          srclang="en"
+          label="English Subtitles"
+        />
+
+        <track
+          src="Media/descriptions.vtt"
+          kind="descriptions"
+          srclang="en"
+          label="English Descriptions"
+        />
+
+        Your browser does not support the video tag. Your browser does not
+        support the video.
+      </video>
+    </main>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

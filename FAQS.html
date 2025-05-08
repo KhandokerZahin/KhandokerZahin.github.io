@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Here you can get answers about me" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="pic-container">
+        <nav class="navbar">
+          <a href="index.html"><img src="AHIN.jpg" class="logo" /></a>
+
+          <div class="hamburger" id="hamburger">&#9776;</div>
+          <!-- Hamburger icon -->
+
+          <ul id="nav-links" class="nav-links">
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="FAQS.html">FAQS</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <div id="questions">
+        <p onclick="ans1()">Since when have you loved airplanes?</p>
+        <p onclick="ans2()">How passionate are you in Tech?</p>
+        <p onclick="ans3()">What made you love web development?</p>
+        <p onclick="ans4()">What do you want to be when your older?</p>
+      </div>
+      <div id="answer">
+        <h2>Answer:</h2>
+        <p></p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
